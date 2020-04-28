@@ -1,0 +1,56 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@devular/htm-ui",
+  "author": "Jonathon Sherrard",
+  "module": "dist/htm-ui.esm.js",
+  "devDependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/react-dom": "^16.9.7",
+    "@types/styled-system": "^5.1.9",
+    "@types/styled-system__css": "^5.0.8",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-preact-pure": "^2.2.0",
+    "husky": "^4.2.5",
+    "preact": "^10.4.1",
+    "preact-render-to-string": "^5.1.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tsdx": "^0.13.2",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@styled-system/css": "^5.1.5",
+    "glamor": "2.20.40",
+    "htm": "^3.0.4"
+  }
+}
